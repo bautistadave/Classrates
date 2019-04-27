@@ -3,7 +3,7 @@ function submitComment(commentControl) {
     var subscriptionKey = "b03916fc810e4a019db67bd2c952d093";
     var url = "https://eastus.api.cognitive.microsoft.com/text/analytics/v2.0";
 
-    var payload = '{ "documents": [ { "language": "es-ES", "id": "1", "text": "' + comments + '" }]}';
+    var payload = '{ "documents": [ { "language": "en-US", "id": "1", "text": "' + comments + '" }]}';
 
     $.ajax({
         type: "POST",
